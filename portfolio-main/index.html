@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&amp;display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/js project files/todo-list.css">
+    <link rel="stylesheet" href="/js project files/quote-generator.css">
+    <link rel="stylesheet" href="/js project files/bmi-calculator.css">
+    <link rel="stylesheet" href="/js project files/blobs.css">
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/03acd404d9.js" crossorigin="anonymous"></script>
+    <title>Patrick|McCabe</title>
+</head>
+<body>
+    <div class="app-area">
+    <!--Navbar-->
+
+    <nav class="nav-container">
+        <ul class="navbar">
+            <li class="nav-item">
+                <a href="#home" class="nav-link"><i class="fas fa-home icon" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="##projectsHeading" class="nav-link"><i class="fas fa-code icon" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link"><i class="fas fa-envelope icon" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+
+<!--Hero Animation-->
+    <header class="title-box" id="home">
+        <div class="animation-area">
+            <h1 class="title">
+                Patrick M<sup>c</sup>Cabe
+            </h1>
+            <hr class="title-line">
+            <h2 class="title-subheading">Web Developer</h2>
+        </div>
+    </header>
+
+    
+
+    <!--about me-->
+    <section class="about-me">
+        <!--mobile contact me-->
+        <nav class="contact-mobile-me">
+            <a href="#contact" class="mobile-link">Get in touch!</a>
+        </nav>
+        <!--note paper-->
+        <div class="note-paper1">
+            <ul class="note">
+                 <li> former builder, <span class="strike-through">current legend.</span></li>
+                <li> living and breathing code!</li>
+                <li> loves learning, eager to learn more.</li>
+                <li> uses HTML, CSS, and JavaScript.</li>
+                <li> and Gatsby/React</li>
+                <li> also SASS, Bootstrap </li>
+                <li> and a bit of game dev with GDScript.</li>
+                <li> Some 3D modelling.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!--portfolio projects-->
+
+    <section class="portfolio" id="#projectsHeading">
+
+        <div class="portfolio-subheading">
+            <h3 class="subheading">
+                Selected Projects
+            </h3>
+        </div>
+
+        
+
+            
+            
+        <div class="project-wrapper">
+
+            <div class="todo-app">
+                <h4 class="todo-title">Todo List</h4>
+                <a href="https://github.com/McCabe1985/todolist2" class="github-link"><i class="fas fa-code icon fa-2x" aria-hidden="true"></i></a>
+                <div class="container">
+            
+                    <input class="input-field" type="text" placeholder="add todo"><button class="add-todo">+</button>
+                    <div class="todos" id="todo-container">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-machine">
+                <h4 class="app-title">
+                    Quote Generator
+                </h4>
+                <a href="https://github.com/McCabe1985/quick-n-dirty-quote-generator" class="github-link"><i class="fas fa-code icon fa-2x" aria-hidden="true"></i></a>
+                <button class="get-quote">New Quote</button>
+                <p class="quote">“To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.”
+                    ― Ralph Waldo Emerson</p>
+            </div>
+
+            <div class="bmi-calculator">
+                <h4 class="bmi-title">BMI Calculator</h4>
+                <a href="https://github.com/McCabe1985/bmicalculator2" class="github-link"><i class="fas fa-code icon fa-2x" aria-hidden="true"></i></a>
+                <input type="number" class="height" placeholder="height(cm)">
+                <input type="number" class="weight" placeholder="weight(kg)">
+                <button class="calculate">Calculate!</button>
+                <p class="result"></p>
+            </div>
+        </div>  
+
+        
+        <div class="project-wrapper">
+            <div class="project-card">
+                <h4 class="card-title">
+                    <a href="https://mccabe-webdesign.com">McCabe Web Design</a>
+                </h4>
+                <div class="card-content">
+                <img src="/img/mccabe-banner.png" alt="" class="project-img">
+                <a href="https://github.com/McCabe1985/ecotech_public" class="project-blurb">
+                    A static site built with Gatsby/React and graphql.
+                </a>
+                </div>
+            </div>
+
+            <div class="project-card moc">
+                <h4 class="card-title">
+                    <a href="https://fraternitas-haereticorum.co.uk/">Fraternitas Haereticorum</a>
+                </h4>
+                <div class="card-content">
+                    <img src="/img/wordbearers.jpg" alt="" class="project-img">
+                <a href="https://github.com/McCabe1985/eterna_theme" class="project-blurb">
+                    A responsive WordPress blog and custom theme
+                </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h4 class="card-title">
+                    <a href="https://transcendent-sawine-9ba7b5.netlify.app/">React todo list</a>  
+                </h4>
+                <div class="card-content">
+                    <img src="/img/Screenshot 2023-06-15 170240.png" alt="" class="project-img">
+                <a href="https://github.com/McCabe1985/react_todo_list" class="project-blurb">
+                    a simple todo list built in React
+                </a>
+                </div>
+            </div>
+
+            
+        </div>
+        
+
+        <div class="project-wrapper">
+            <div class="project-card">
+                <h4 class="card-title">
+                    Ecotech window cleaning
+                </h4>
+                <div class="card-content">
+                <img src="/img/ecotech.png" alt="" class="project-img">
+                <a href="https://github.com/McCabe1985/ecotech_public" class="project-blurb">
+                    A static site built with Gatsby/React.
+                </a>
+                </div>
+            </div>
+
+            <div class="project-card moc">
+                <h4 class="card-title">
+                    <a href="">SmartWood Flooring Scotland</a>
+                </h4>
+                <div class="card-content">
+                <img src="/img/smartwood-banner.png" alt="" class="project-img">
+                <a href="https://github.com/McCabe1985/smartwood_public/" class="project-blurb">
+                    A static website built with Gatsby/React/Graphql
+                </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h4 class="card-title">
+                    <a href="https://flourishing-naiad-19e5e5.netlify.app/">Rimstore!!!</a>
+                </h4>
+                <div class="card-content">
+                    <img src="/img/1676130181744.jpg" alt="" class="project-img">
+                <a href="https://github.com/McCabe1985/rimstore_public" class="project-blurb">
+                    a JAMstack e-commerce store using Stripe as a backend, and built with Gatsby/React/Graphql.
+                </a>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="contact-me-section" id="contact">
+        <form 
+        name="contact-form"
+        data-netlify="true"
+        onSubmit="submit"
+        netlify 
+        method="POST"
+        netlify-honeypot="bot-field" 
+        id="contact-form"
+        class="contact-me-form"
+        >
+            <h3 class="contact-title">Get in touch!</h3>
+            <label for="name" class="name-label">Name</label>
+            <input nametype="text" class="name" id="name" placeholder="Enter your name" required="">
+            <small class="error"></small>
+            <label for="email">Email address</label>
+            <input type="email" class="email" id="email" placeholder="someone@example.com" required="">
+            <small class="error"></small>
+            <label for="message" class="message-label">Your message</label>
+            <textarea name="message" class="message-box" id="message" cols="25" rows="10" required=""></textarea>
+            <input type="hidden" name="_next" value="https://patrick-mccabe.org.uk">
+            <small class="error"></small>
+            <button class="submit-button" type="submit">Submit!</button>
+            <p class="success" id="success"></p>
+        </form>
+    </section>
+
+    <footer class="copyright-container">
+        <p class="copyright"> </p>
+    </footer>
+ 
+</div>
+<script src="app.js"></script>
+<script src="/js project files/todo-list.js"></script>
+<script src="/js project files/quote-generator.js"></script>
+<script src="/js project files/bmi-calculator.js"></script>
+<script src="/js project files/blobs.js"></script>
+
+</body>
+</html>
